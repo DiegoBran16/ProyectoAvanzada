@@ -1,0 +1,13 @@
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\bin\Debug\proyectoDip.exe.config
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.csprojResolveAssemblyReference.cache
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.Form1.resources
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.Properties.Resources.resources
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.csproj.GenerateResource.Cache
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\bin\Debug\proyectoDip.exe
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\bin\Debug\proyectoDip.pdb
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.exe
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.pdb
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.CrearU.resources
+c:\users\diego\onedrive\documents\visual studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.modificar_usuario.resources
+C:\Users\diego\OneDrive\Documents\Visual Studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.menu.resources
+C:\Users\diego\OneDrive\Documents\Visual Studio 2015\Projects\proyectoDip\proyectoDip\obj\Debug\proyectoDip.ModificarUsuario.resources
