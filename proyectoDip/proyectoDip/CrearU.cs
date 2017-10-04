@@ -14,6 +14,7 @@ namespace proyectoDip
     {
          Grupo[] grupos = new Grupo[200];
          Usuario[] users = new Usuario[999];
+        string grup;
         public CrearU()
         {
             InitializeComponent();
@@ -31,6 +32,59 @@ namespace proyectoDip
             user.setCargo(txtCargo.Text);
             user.setGrupo(txtGrupo.Text);
             user.setContra(txtContra.Text);
+            grup = txtGrupo.Text;
+            if (txtCargo.Text == "parlamentario" || txtCargo.Text == "Parlamentario")
+            {
+                Grupo grupObj = new Grupo();
+                grupObj.setNombre(txtGrupo.Text);
+                grupObj.setParlamentario(user);
+                for (int i = 0; i < 200; i++)
+                {
+                    if (grupos[i] != null && grupos[i].getNombre() == txtGrupo.Text || grupos[i].getParlamentario() == user)
+                    {
+                        MessageBox.Show("El grupo ya existe y posee un parlamentario");
+                        break;
+                    }
+                    else if (grupos[i] == null)
+                    {
+                        grupos[i] = grupObj;
+                        break;
+                        
+                    }
+                }
+            }
+            
+            else if (txtCargo.Text == "Asesor" || txtCargo.Text == "asesor")
+            {
+                for( int i=0; i<200; i++)
+                {
+                    if ( grupos[i] != null && grupos[i].getNombre()!= user.getGrupo())
+                    {
+                        MessageBox.Show("el grupo al que intenta incorporarse no existe");
+                    }
+                    else if (grupos[i] != null && grupos[i].getNombre() == user.getGrupo())
+                    {
+                        if (grupos[i].VerificarAsesor(user) == false)
+                        {
+                            grupos[i].asignarAsesor(user);
+                            MessageBox.Show("agregado al grupo");
+                        }
+                        else if (grupos[i].VerificarAsesor(user) == true)
+                        {
+                            MessageBox.Show("el ususario ya pertenece al grupo");
+                        }
+                        else if (grupos[i].AsesoresEnGrupo() == 8) {
+                            MessageBox.Show("no se puede agregar al grupo, numero maximo de asesores alcanzado");
+
+
+                        }
+                        
+                    }
+                }
+                
+
+
+            }
          
 
             for (int i = 0; i < 999; i++)
@@ -41,6 +95,9 @@ namespace proyectoDip
                 }
                 break;
             }
+          
+            
+            
             Form1 f1 = new Form1(users);
             f1.Show();
         }

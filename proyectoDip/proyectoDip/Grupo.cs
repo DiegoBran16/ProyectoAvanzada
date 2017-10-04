@@ -12,6 +12,7 @@ namespace proyectoDip
         Usuario parlamentario;
         Usuario[] asesores = new Usuario[8];
         int agregado = 0;
+        int contador;
 
         public int getAgregado()
         {
@@ -35,16 +36,50 @@ namespace proyectoDip
         }
         public void asignarAsesor(Usuario a)
         {
-            
-            for(int i=0; i < 8; i++)
+
+            for (int i = 0; i < 8; i++)
             {
-                if (asesores[i]!=null)
+                if (asesores[i] == a)
+                {
+                    agregado = 0;
+                }
+                if (asesores[i] != null)
                 {
                     asesores[i] = a;
                     agregado = 1;
                 }
-                
+                else
+                {
+                    agregado = -1;
+                }
+
             }
         }
+            public bool VerificarAsesor(Usuario a)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                if (asesores[i]!= null&& asesores[i] == a)
+                {
+                    return true;
+                    break;
+                }
+               
+            }
+            return false;
+            }
+        public int AsesoresEnGrupo()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                if (asesores[i] != null)
+                {
+                    contador+=1;
+                }
+            }
+            return contador;
+
+        }
+        }
     }
-}
+
